@@ -1,0 +1,11 @@
+{
+  "name": "matcha-calc",
+  "version": "1.0.0",
+  "description": "An aesthetic calculator with a matcha (day) and coffee (night) theme.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/calc.test.js"
+  },
+  "license": "MIT"
+}

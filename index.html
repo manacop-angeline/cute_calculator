@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="matcha">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>matcha calc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <div class="theme-row">
+      <span class="theme-label" id="themeLabel">day</span>
+      <button class="switch" id="themeToggle" role="switch" aria-checked="false" aria-label="Toggle matcha / coffee mode">
+        <span class="switch-icon sun">🍵</span>
+        <span class="switch-icon moon">☕</span>
+        <span class="knob"></span>
+      </button>
+    </div>
+
+    <section class="calc" aria-label="Calculator">
+      <h1 class="title">
+        <span class="deco" id="decoL">✿</span>
+        <span id="titleText">matcha calc</span>
+        <span class="deco" id="decoR">✿</span>
+      </h1>
+
+      <div class="display" id="display" aria-live="polite">0</div>
+
+      <div class="keys">
+        <button class="key fn" data-action="clear">C</button>
+        <button class="key fn" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button class="key fn" data-action="percent">%</button>
+        <button class="key op" data-action="operator" data-value="÷">÷</button>
+
+        <button class="key" data-action="digit" data-value="7">7</button>
+        <button class="key" data-action="digit" data-value="8">8</button>
+        <button class="key" data-action="digit" data-value="9">9</button>
+        <button class="key op" data-action="operator" data-value="×">×</button>
+
+        <button class="key" data-action="digit" data-value="4">4</button>
+        <button class="key" data-action="digit" data-value="5">5</button>
+        <button class="key" data-action="digit" data-value="6">6</button>
+        <button class="key op" data-action="operator" data-value="−">−</button>
+
+        <button class="key" data-action="digit" data-value="1">1</button>
+        <button class="key" data-action="digit" data-value="2">2</button>
+        <button class="key" data-action="digit" data-value="3">3</button>
+        <button class="key op" data-action="operator" data-value="+">+</button>
+
+        <button class="key zero" data-action="digit" data-value="0">0</button>
+        <button class="key" data-action="dot">.</button>
+        <button class="key eq" data-action="equals">=</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
